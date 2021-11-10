@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>Tambo 2021</title>
+	<title></title>
 
     <meta charset="utf-8">
      {% block stylesheets %}
@@ -14,18 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="bootstrap_2.min.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
    
-
-    <!-- Data Tables -->
-    <link rel="stylesheet" type="text/css" href="Framework/datatables/datatables.min.css">
-    <link rel="stylesheet" type="text/css" href="Framework/datatables/DataTables-1.10.23/css/dataTables.bootstrap4.min.css">
-    <script type="text/javascript" src="Framework/jquery.min.js" ></script>
 
      {% endblock %}
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -35,46 +24,12 @@
 
   
       <header >
-        
-         {% block header %}
-               <div class="header_facu">
-                       <nav class="navbar navbar-light bg-light">
-                          <div class="caja_de_logo">
-                                <a class="navbar-brand" href="#">
-                                  <img src="public/img/logo (2).png"  alt="200" class="img_logo">
-                                </a>
-                          </div>
-                       </nav>
-                      <div class="perfil_login_horizontal">
-                        <a href="/">SALIR<a>  
-                     </div> 
-
-
-         {% endblock %}
+      
      </header>
      
 
 
-      <div class="caja_del_menu_y_contenido">        
-        
-            
-            
-            
-                    <!-- Sidebar -->
-                    <div id="sidebar-container" class="bg-primary"> 
-                        <div class="menu">
-                          <!-- <a href="/dashboard" class="d-block text-light p-3 border-0"><i class="icon ion-md-briefcase mr-2 lead"></i><i class="fa fa-cog" aria-hidden="true"></i> Inicio</a> -->
-                          <a href="/productos" class="d-block text-light p-3 border-0"><i class="icon ion-md-briefcase mr-2 lead"></i><i class="fa fa-cog" aria-hidden="true"></i> PRODUCTO</a>
-                          <a href="/clientes" class="d-block text-light p-3 border-0"><i class="icon ion-md-person mr-2 lead"></i>CLIENTE</a>
-                          <a href="/lotes" class="d-block text-light p-3 border-0"><i class="icon ion-md-pricetags mr-2 lead"></i>LOTES </a>
-                          <a href="/caja" class="d-block text-light p-3 border-0"><i class="icon ion-md-pricetags mr-2 lead"></i>CAJA </a>
-                          <a href="/pagos" class="d-block text-light p-3 border-0"><i class="icon ion-md-pricetags mr-2 lead"></i>PAGOS </a>
-                          <a href="/ventas" class="d-block text-light p-3 border-0"><i class="icon ion-md-pricetags mr-2 lead"></i>VENTAS </a>
-                        </div>
-                    </div>
-                    <!-- Fin sidebar -->
-                   
-                    <div class="w-100">
+      
             
                     <section class="contenido">
                        {% block content %}
@@ -83,31 +38,17 @@
                     </section>
             
             
-                    </div>
-          
+                  
                 
          </div>
           
           <footer>
           
-              <h2 class="titulo-footer">&copy; Nube Digital 2021| Desarrollo de software</h2>
-          
+              
           </footer>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   
-            
-     
-     <script type="text/javascript" src="Framework/popper/src/popper.js" ></script>
-     
-
-     <!-- Data Tables JS -->
-     <script type="text/javascript" src="Framework/datatables/datatables.min.js" ></script>
-
-     <script src="css/estilos.js" type="text/javascript"></script>
-
+    
 </body>
   
   
