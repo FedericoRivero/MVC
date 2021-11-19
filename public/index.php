@@ -44,6 +44,9 @@ $mapa = $contenedorDeRutas->getMap();
 //--Login-----------------------------------------------------------------------------------------------------------------
 
 $mapa->get('home', '/mvc/', ['controller'       => 'App\controllers\HomeController', 'action'       => 'getHome']);
+$mapa->get('usuario', '/mvc/usuario', ['controller'       => 'App\controllers\UsuarioController', 'action'       => 'getUsuario']);
+$mapa->get('productos', '/mvc/productos', ['controller'       => 'App\controllers\ProductosController', 'action'       => 'getProductos']);
+$mapa->get('lista', '/mvc/lista', ['controller'       => 'App\controllers\ListaController', 'action'       => 'getLista']);
 
 //------Mach whit route-------------
 $matcher = $contenedorDeRutas->getMatcher();

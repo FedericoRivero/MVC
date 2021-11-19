@@ -1,0 +1,23 @@
+{% include "base.twig" %}
+<h1>
+    Lista
+</h1>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            {% for lista in listas %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{lista['nombre']}}</h5>
+                    <img width="120" height="120" src="{{lista['imagen']}}" class="img-fluid card-img-top" alt="Imagen">
+                    <p class="card-text">{{lista['descripcion']}}</p>
+                    <p class="card-text">${{lista['precio']}}</p>
+                    <button type="button" class="btn btn-outline-success">Comprar</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

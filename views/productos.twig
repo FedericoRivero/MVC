@@ -1,0 +1,24 @@
+{% include "base.twig" %}
+<h1>
+Productos {{categoria}}
+</h1>
+
+<h3>
+Nombre: {{productos_nombre}}
+</h3>
+
+<h3>
+Código: {{productos}}
+</h3>
+
+<h3>
+{% for precio in precios %}
+$ {{precio}} <br>
+{% endfor %}
+</h3>
+
+
+<h3>
+Descripción: {{productos_descripcion}}
+</h3>
+

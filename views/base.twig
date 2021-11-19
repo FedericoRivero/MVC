@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-	<title></title>
+		<title></title>
 
-    <meta charset="utf-8">
-     {% block stylesheets %}
-        <link rel="stylesheet" type="text/css" href="Framework/bootstrap/css/bootstrap.min.css">
-        <link href="css/global.css" rel="stylesheet" type="text/css" >
-        <link rel="stylesheet" type="text/css" href="css/styls.css">
-        
-         <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-   
-
-     {% endblock %}
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-
-</head>
-<body>
-
-  
-      <header >
-      
-     </header>
-     
+		<meta charset="utf-8">
+		{% block stylesheets %}
+			<link rel="stylesheet" type="text/css" href="../Framework/bootstrap/css/bootstrap.min.css">
+			<!--
+			<link href="css/global.css" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="css/styls.css">
+			-->
+			<!-- Required meta tags -->
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-      
-            
-                    <section class="contenido">
-                       {% block content %}
-                            
-                      {% endblock %} 
-                    </section>
-            
-            
-                  
-                
-         </div>
-          
-          <footer>
-          
-              
-          </footer>
+		{% endblock %}
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	</head>
+	<body>
 
 
-    
+		<header></header>
+
+
+		<section class="contenido"> {% block content %}{% endblock %}
+			</section>
+		</body>
+	</html>
+</div>
+
+<footer></footer>
+<script src="../public/Framework/jquery.min.js"></script>
+<script src="../public/Framework/bootstrap/css/bootstrap.min.css"></script>
 </body>
-  
-  
-
 </html>

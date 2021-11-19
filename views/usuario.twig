@@ -1,0 +1,17 @@
+{% include "base.twig" %}
+
+<h1>
+    Usuario
+</h1>
+
+<div class="container">
+    <div>
+{% for usuario in usuarios %}
+        <h3 class="card-title">Nombre: {{usuario['nombre']}}</h3>
+        <p class="card-text">Apellido: {{usuario['apellido']}}</p>
+        <img width="120" height="120" src="{{usuario['imagen']}}" class="img-fluid" alt="Imagen">
+        <p class="card-text">Email: {{usuario['email']}}</p>
+        <p class="card-text">Telefono: {{usuario['telefono']}}</p>
+{% endfor %}
+</div>
+</div>
